@@ -1,9 +1,18 @@
 import os
 
-# Get the list of files and directories in the current directory
-directory_content = os.listdir()
+def list_directory_contents(path):
+    try:
+        # List all files and directories in the given path
+        contents = os.listdir(path)
+        print(f"Contents of the directory '{path}':")
+        for item in contents:
+            print(item)
+    except FileNotFoundError:
+        print(f"The directory '{path}' does not exist.")
+    except PermissionError:
+        print(f"Permission denied to access the directory '{path}'.")
 
-# Print the content of the directory
-print("Content of the directory:")
-for item in directory_content:
-    print(item)
+if __name__ == "__main__":
+    # Specify the directory path (current directory in this case)
+    directory_path = os.getcwd()
+    list_directory_contents(directory_path)

@@ -5,9 +5,9 @@ print("Addition:", a + b)  # Output: 15
 print("Subtraction:", a - b)  # Output: 5
 print("Multiplication:", a * b)  # Output: 50
 print("Division:", a / b)  # Output: 2.0
-print("Modulus:", a % b)  # Output: 0
-print("Exponentiation:", a ** b)  # Output: 100000
-print("Floor Division:", a // b)  # Output: 2
+print("Modulus:", a % b)  # used to get the remainder, Output: 0
+print("Exponentiation:", a ** b)  # used to raise a to the power of b, Output: 100000
+print("Floor Division:", a // b)  # used to get the quotient without the decimal part, Output: 2
 
 # Comparison Operators
 print("Equal to:", a == b)  # Output: False

@@ -21,3 +21,4 @@ print(n[1:3:2]) # it will skip the 2nd index and print the 3rd index value
 
 b= "abcdefghijklmnopqrstuvwxyz"
 print(b[::2]) # it will print the even index values
+print(b[1::2]) # it will print the odd index values
